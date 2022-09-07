@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    width: calc(100% / 3);
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+    /* DEBUG */
+}
+
+.discount {
+    position: absolute;
+    top: 400px;
+    background-color: red;
+}
+
+.eco {
+    position: absolute;
+    top: 400px;
+    background-color: green;
+
+}
+/* UTILITY */
+.txt-white {
+    color: white;
+}
+
+.txt-gray {
+    color: lightgray;
+}
+
+.txt-red {
+    color: red;
+}
+/* MAIN */
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.orig_price {
+    text-decoration: line-through;
+}
