@@ -11,6 +11,10 @@
     margin: 0 auto;
 }
 
+.flex-container {
+    display: flex;
+}
+
 img {
     width: 100%;
 }
@@ -21,47 +25,72 @@ img {
     justify-content: space-between;
 }
 
-.col {
-    width: calc(100% / 3);
-}
-
 .card {
     position: relative;
-    width: 300px;
-    margin: 20px;
-    /* DEBUG */
+    margin-right: 10px;
+    width: calc(100% / 3 - 10px);
+}
+
+.badge {
+    position: absolute;
+    bottom: 3em;
 }
 
 .discount {
-    position: absolute;
-    top: 400px;
     background-color: red;
 }
 
 .eco {
-    position: absolute;
-    top: 400px;
     background-color: green;
-
 }
+
+.favorites {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 1.5rem;
+    padding: 10px 20px 10px 20px;
+    background-color: white;
+}
+
+.heart:hover {
+    color: red;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
 /* UTILITY */
 .txt-white {
     color: white;
 }
 
 .txt-gray {
-    color: lightgray;
+    color: gray;
 }
 
 .txt-red {
     color: red;
 }
+
 /* MAIN */
 .info {
-    display: flex;
-    flex-direction: column;
+    display: inline;
+}
+
+.disc_price {
+    padding-right: 10px;
 }
 
 .orig_price {
     text-decoration: line-through;
 }
+
+.disc-eco {
+    display: inline;
+    top: 380px;
+    right: 245px;
+}
+
